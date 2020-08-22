@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
   //Rotate into  X with menu lines
@@ -74,7 +74,7 @@
       font-size: 30px;
       font-weight: 300;
       text-transform: uppercase;
-      color: #fff;
+      color: set-text-color($primary-color);
       @include easeOut;
       &:hover {
         color: $secondary-color;
@@ -100,6 +100,8 @@
       background: url(../img/portrait.jpg) 50% / cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      opacity: 1;
+      z-index: 5;
     }
   }
 }
