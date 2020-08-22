@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "ShadowIntoLight";
+  src: url("../fonts/ShadowIntoLight-Regular.ttf") format("ttf"), url("../fonts/ShadowIntoLight-Regular.eot") format("eot"), url("../fonts/ShadowIntoLight-Regular.otf") format("otf"), url("../fonts/ShadowIntoLight-Regular.ttf") format("ttf"), url("../fonts/ShadowIntoLight-Regular.woff") format("woff"), url("../fonts/ShadowIntoLight-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Dosis-Regular";
+  src: url("../fonts/Dosis-Regular.eot") format("eot"), url("../fonts/Dosis-Regular.otf") format("otf"), url("../fonts/Dosis-Regular.ttf") format("ttf"), url("../fonts/Dosis-Regular.woff") format("woff"), url("../fonts/Dosis-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .menu-btn {
   position: absolute;
   top: 35px;
@@ -9,7 +21,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #ccbabd;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -24,7 +36,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -38,9 +49,10 @@
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
+    opacity: 0.9;
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #03130b;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -50,21 +62,21 @@
       .menu-nav .nav-item.show {
         transform: translate3d(0, 0, 0); }
       .menu-nav .nav-item.current > a {
-        color: #e9eb75; }
+        color: #ba7f89; }
     .menu-nav .nav-link {
       position: relative;
       display: inline-block;
       font-size: 30px;
       font-weight: 300;
       text-transform: uppercase;
-      color: #fff;
+      color: #ccbabd;
       transition: all 0.5s ease-out; }
       .menu-nav .nav-link:hover {
-        color: #e9eb75; }
+        color: #ba7f89; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #062919;
     transition: all 0.5s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
@@ -74,7 +86,7 @@
       height: 250px;
       background: url(../img/portrait.jpg) 50%/cover;
       border-radius: 50%;
-      border: solid 3px #e9eb75;
+      border: solid 3px #ba7f89;
       opacity: 1;
       z-index: 5; }
 
@@ -94,14 +106,14 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #062919;
+  color: #ccbabd;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Dosis-Regular";
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg) 50%/cover;
+    background: url(../img/Optimized-background_3.jpg) 50%/cover;
     background-attachment: fixed; }
     body#bg-img:after {
       content: "";
@@ -111,12 +123,13 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
+      background: rgba(6, 41, 25, 0.7); }
 
 h1,
 h2,
 h3 {
   margin: 0;
+  font-family: "ShadowIntoLight";
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
@@ -127,10 +140,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(7, 50, 30, 0.5); }
 
 a {
-  color: #fff;
+  color: #ccbabd;
   text-decoration: none; }
 
 header {
@@ -139,7 +152,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #e9eb75; }
+  color: #ba7f89; }
 
 main {
   padding: 4rem;
@@ -149,7 +162,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #e9eb75;
+        color: #ba7f89;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -172,7 +185,7 @@ main {
       height: 250px;
       width: 250px;
       border-radius: 50%;
-      border: solid 3px #e9eb75; }
+      border: solid 3px #ba7f89; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -183,9 +196,9 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #515151;
+    background: #093f27;
     padding: 0.5rem;
-    border-bottom: #e9eb75 5px solid; }
+    border-bottom: #ba7f89 5px solid; }
 
 #projects {
   display: grid;
@@ -193,9 +206,10 @@ main {
   grid-gap: 20px; }
   #projects img {
     width: 100%;
-    border: solid 3px #fff; }
+    border: solid 3px #fff;
+    border-radius: 4px; }
     #projects img:hover {
-      border: solid 3px #e9eb75;
+      border: solid 3px #ba7f89;
       opacity: 0.5;
       transition: all 0.5s ease-out; }
 
@@ -203,24 +217,48 @@ main {
   display: block;
   padding: 0.7rem 1rem;
   margin-bottom: 0.5rem;
-  border: none; }
+  border: none;
+  border-radius: 4px; }
   .btn:hover, .btn-light:hover, .btn-dark:hover {
-    background-color: #e9eb75;
+    background-color: #ba7f89;
     transition: all 0.5s ease-out; }
 
 .btn-light {
-  background-color: #aaaaaa;
+  background-color: #a68d91;
   color: #333; }
 
 .btn-dark {
-  background-color: black;
+  background-color: #611838;
   color: #fff; }
+
+#contacts .contact_flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  #contacts .contact_flex .contact {
+    text-align: center;
+    font-size: 2rem;
+    border-top: solid 3px #ccbabd;
+    border-bottom: solid 3px #ccbabd;
+    border-right: none;
+    border-left: none;
+    padding: 1.5rem 2.5rem;
+    margin-top: 1.5rem; }
+    #contacts .contact_flex .contact:hover {
+      background-color: #ba7f89;
+      color: #000;
+      transition: all 0.5s ease-out; }
+      #contacts .contact_flex .contact:hover span {
+        color: #000; }
+    #contacts .contact_flex .contact span {
+      color: #ba7f89; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
+  background: black;
+  color: #ccbabd;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
