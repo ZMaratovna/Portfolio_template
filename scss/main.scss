@@ -46,7 +46,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -107,6 +107,42 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+//Work/Projects
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  img {
+    width: 100%;
+    border: solid 3px #fff;
+    &:hover {
+      border: solid 3px $secondary-color;
+      opacity: 0.5;
+      @include easeOut;
+    }
+  }
+}
+//Buttoms Styles
+.btn {
+  display: block;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  &:hover {
+    background-color: $secondary-color;
+    @include easeOut;
+  }
+}
+.btn-light {
+  @extend .btn;
+  background-color: lighten($primary-color, 40);
+  color: #333;
+}
+.btn-dark {
+  @extend .btn;
+  background-color: darken($primary-color, 40);
+  color: #fff;
 }
 #main-footer {
   text-align: center;

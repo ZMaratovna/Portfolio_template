@@ -1,5 +1,8 @@
 //Widescreens
 @include mediaXL {
+  #projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 //Smartphones
 @include mediaSm {
@@ -37,6 +40,9 @@
       "job1"
       "job2"
       "job3";
+    grid-template-columns: 1fr;
+  }
+  #projects {
     grid-template-columns: 1fr;
   }
 }
@@ -89,4 +95,7 @@
 
 //Desktops
 @include mediaLg {
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
